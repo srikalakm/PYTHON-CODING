@@ -1,0 +1,35 @@
+n=input()
+m=int(input())
+l=[]
+for i in range(m):
+    a=input()
+    l.append(a)
+j=[]  
+m=[]
+for i in l:
+    if n.find(i)!=-1:
+            for i in l:    
+                if n.find(i)!=-1:
+                        c=n.find(i)
+                        j.extend(['<s>',l[c]])
+        
+                k=''.join(j)
+        
+        
+                m.append('</s>')
+                for i in l:
+                    if i not in j:
+                         m.append(i)
+                
+                g=''.join(m)  
+                print(k+g)
+else:
+    m.append('</s>')
+    for i in l:
+         if i not in j:
+                 m.append(i)
+                
+    g=''.join(m)  
+    print(g)
+    
+                
